@@ -1,72 +1,60 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Smells Like Bakin' Cupcake Company</title>
-  <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
-  <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<title>Hacker</title>
+	<meta charset="utf-8">
+	<link rel ="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800,600' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+	</script>
 </head>
+
 <body>
-  <div class="container clearfix">
-    <div class="grid_4">
-      <img src="img/logo.gif" alt="Smells Like Bakin">
-    </div>
-    <div class="grid_8 omega">
-      <ul class="nav">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Cupcakes &amp; Prices</a></li>
-        <li><a href="#">Locations</a></li>
-        <li class="last"><a href="#">Contact Us</a></li>
-      </ul>
-    </div>
-    <div id="intro" class="grid_9">
-      <h1>Opposites really do attract, especially in our kitchen! We combine unexpected flavors that melt together to create ironically delicious desserts.</h1>
-      <p><a href="#" class="btn">Browse Our Cupcakes</a></p>
-    </div>
-    <div class="grid_3 omega">
-      <img src="img/you-bake-me-blush.gif" alt="You Bake Me Blush">
-    </div>
+    <header>
+        <div id="image">
+            <img src="img/Image1.jpg" />
+        </div>
+        
+        <div id="welcome-wrapper">
+            	<h1>Philip London</h1>
 
-    <div id="featured-cupcake" class="grid_7">
-      <h2>Cupcake of the Week</h2>
-      <p>This week’s featured cupcake is the <a href="#">Avocado Chocolate cupcake</a>. Its strange combo of flavors will kick your taste buds into fiesta mode!</p>
-      <img src="img/featured-cupcake.jpg" alt="Avocado Chocolate Cupcake">
-    </div>
-
-    <div id="new-cupcakes" class="grid_5 omega">
-      <h2>Fresh Out the Oven</h2>
-      <p>Our newest cupcakes are <a href="#">Bacon Me Crazy</a> and <a href="#">Jalapeño So Spicy</a>. </p>
-      <img src="img/new-cupcake-bacon.jpg" alt="Bacon Me Crazy">
-      <img src="img/new-cupcake-jalapeno.jpg" alt="Jalapeno So Spicy">
-    </div>
-
-
-    <div class="grid_7">
-      <h2>Inside the Kitchen</h2>
-      <p>Smells Like Bakin’ started out in the garage of the husband wife duo Allison &amp; Joseph. Allison is the baker, and Joseph found a way for them to make a business out of her tasty treats. Flash forward to today and they have a successful store front, catering business and cupcake truck. </p>
-      <p><a href="#" class="btn-small">Read More</a></p>
-    </div>
-
-    <div class="grid_5 omega">
-      <h2>Get Bakin' with Us</h2>
-
-      <div id="contact">
-        <p>Call us: <span>1-555-CUP-CAKE</span><br>
-        Email us: <a href="#">bakeon@smellslikebakin.com</a></p>
-      </div>
-
-
-      <p>We announce all of our new flavors first through Facebook &amp; Twitter, and even take requests!</p>
-      <a href="http://www.facebook.com/SmellsLikeBakin"><img src="img/facebook.gif" alt="Facebook"></a>
-      <a href="https://twitter.com/#!/smellslikebakin"><img src="img/twitter.gif" alt="Twitter"></a>
-    </div>
-
-    <div id="copyright" class="grid_12">
-      <p>&copy; 2012 Smells Like Bakin' Cupcake Company. All Rights Reserved.</p>
-    </div>
-
-  </div>
+            <ul>
+                <li id="interests">INTERESTS</li>
+                <li id="aboutMe">ABOUT ME</li>
+                <li id="hacker">PROJECTS</li>
+            </ul>
+    <div id="body-wrapper">
+        <div class="interests">I love web development. I want to learn everything I can about it. I will go above and beyond to learn as much as I can, because I love doing it. I love messing up and figuring out where I went wrong. I love that "ah-ha!" moment when NOTHING you've tried has worked, but you change one little thing and everything just falls into place and starts running like new. It's not a job for me, it's not homework, it's what I'm passionate about and what I want to learn more and more about everyday.</div>
+        <div class="aboutMe">I am from New York City, born and raised. A recent graduate of Sarah Lawrence College, I studied economics and web development. I spend a lot of my free time learning JavaScript and Ruby and I am developing an application that works with APIs from different news sources. I held the honor of being Captain of the Soccer team and first singles on the Tennis team. When I'm not doing homework, playing soccer, or teaching myself how to code, I am either working at powerHouse Arena in Dumbo as the Web Design Intern or interviewing prospective students for the Sarah Lawrence admissions department. I also have a golden retriever named Sadie. She is awesome.</div>
+        <div class="hacker">Coming Soon!</div>
+	<script>
+	$(document).ready(function () {
+    $("img").click(function () {
+        $("#image").toggleClass('active');
+        $("#welcome-wrapper").toggleClass('open');
+        $("#body-wrapper").toggleClass('open');
+        $("img").css("width", "200px");
+    });
+    $("#interests").click(function(){
+		  $("img").css("width", "100px");
+		  $(".interests").fadeIn("fast");
+		  $(".aboutMe").css("display", "none");
+		  $(".hacker").css("display", "none");
+	  });
+	  $("#aboutMe").click(function(){
+		  $("img").css("width", "100px");
+		  $(".aboutMe").fadeIn("fast");
+		  $(".interests").css("display", "none");
+		  $(".hacker").css("display", "none");
+	  });
+	  $("#hacker").click(function(){
+		  $("img").css("width", "100px");
+		  $(".hacker").fadeIn("fast");
+		  $(".aboutMe").css("display", "none");
+		  $(".interests").css("display", "none");
+	  });
+});
+	</script>
 </body>
 </html>

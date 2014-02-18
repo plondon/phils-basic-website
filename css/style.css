@@ -1,84 +1,93 @@
 body {
-  font-family: 'Nunito', sans-serif;
-  color: #FAF3BC;
-  background: #420600 url('img/bg-texture.jpg') repeat;
+    background: url('../img/centralpark2.jpg')no-repeat center center fixed;
+    background-size: cover;
+    max-width: 500px;
+    margin: 0px auto;
+    font-family:'Open Sans', sans-serif;
 }
-
-a {
-  color: #4FB69F;
-  text-decoration: none;
+header {
+    position: relative;
+    text-align: center;
 }
-
+.container {
+    display: inline;
+}
+img {
+    position: relative;
+    bottom: 0;
+    width: 200px;
+    border: 9px solid rgba(4, 150, 264, .4);
+    border-radius: 200px;
+    margin: 200px 0 0 0;
+    -webkit-transition: all 600ms ease-in;
+}
+img:hover {
+    cursor: pointer;
+}
 h1 {
-  font-size: 1.750em;
-  letter-spacing: -1.5px;
+    position: relative;
+    margin-top: -180px;
+    color: rgba(4, 150, 264, 1);
+    display: none;
+}
+li {
+    display: inline;
+    color: white;
+    background-color: rgba(4, 150, 264, .8);
+    padding: 10px 12px 10px 10px;
+}
+li:hover {
+    cursor: pointer;
+}
+.interests {
+    display: none;
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    border: 1px solid black;
+}
+.aboutMe {
+    display: none;
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    border: 1px solid black;
+}
+.hacker {
+    display: none;
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    border: 1px solid black;
+}
+#image.active img {
+    bottom: 180px;
 }
 
-h2 {
-  font-size: 1.500em;
-  color: #B4C34F;
+#welcome-wrapper  ul {
+    position: relative;
+    margin-left: -42px;
+    opacity: 0;
+    -webkit-transition: all 600ms ease-in;
 }
 
-.btn {
-  color: #FAF3BC;
-  background: #4FB69F url('img/texture.png') no-repeat right top;
-  padding: 15px 30px;
-  margin: 40px 0px;
-  border-radius: 25px;
-  text-transform: uppercase;
+#body-wrapper {
+    opacity: 0;
+    -webkit-transition: all 600ms ease-in;
 }
 
-.btn:hover {
-  background-color: #4CC4A7;
+#welcome-wrapper.open ul {
+    opacity: 1.0;
+    bottom: 180px;
 }
 
-ul.nav {
-  margin: 120px 0 0 0;
-  list-style: none;
-  float: right;
+#body-wrapper.open {
+    opacity: 1.0;
+    margin-top: -120px;
 }
-
-ul.nav li {
-  float: left;
-  margin-right: 40px;
-}
-
-ul.nav li a {
-  color: #FAF3BC;
-}
-
-#intro {
-  margin: 50px 0 75px 0;
-}
-
-#new-cupcakes img {
-  border: 8px solid #FAF3BC;
-  margin: 0 0 20px 0;
-}
-
-#featured-cupcake img {
-  border: 8px solid #FAF3BC;
-}
-
-#copyright {
-  border-top: 8px solid #2A0400;
-  padding: 10px 0px;
-  margin: 15px 0px;
-  text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
